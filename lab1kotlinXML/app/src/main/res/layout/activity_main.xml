@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical"
     android:paddingTop="60dp"
-    android:gravity="center"
+    android:translationY="-320px"
     tools:context=".MainActivity">
 
     <ImageView
@@ -18,9 +18,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
         android:gravity="center"
-        android:layout_marginTop="15dp">
+        android:orientation="horizontal">
 
         <Button
             android:layout_width="wrap_content"
@@ -30,16 +30,16 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button"
-            android:layout_marginLeft="15dp"/>
+            android:layout_marginLeft="15dp"
+            android:text="Button" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
         android:gravity="center"
-        android:layout_marginTop="15dp">
+        android:orientation="horizontal">
 
         <Button
             android:layout_width="wrap_content"
@@ -49,22 +49,22 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button"
-            android:layout_marginLeft="15dp"/>
+            android:layout_marginLeft="15dp"
+            android:text="Button" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
         android:gravity="center"
-        android:layout_marginTop="15dp">
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Email"
-            android:layout_marginRight="15dp"/>
+            android:layout_marginRight="15dp"
+            android:text="Email" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="0dp"

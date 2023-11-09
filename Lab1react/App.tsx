@@ -1,11 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
 import { Button, StyleSheet, Text, TextInput, View ,Image} from 'react-native';
+import { Header } from 'react-native-elements';
 
 export default function App() {
    const IMAGENAME = require('./assets/image.png'); 
 
   return (
+    <>
+    <Header
+    placement="left"
+    centerComponent={{ text: 'Example 1', style: { color: '#fff', fontSize: 18 , padding:10} }}
+  />
     <View style={styles.container}>
+     
       <Image source={IMAGENAME} style={styles.Image} />
       <View style={styles.ButtonContainer} >
         <Button title='Button'/> 
@@ -22,6 +29,7 @@ export default function App() {
         <TextInput style={styles.TextInput} />
       </View>
     </View>
+    </>
   );
 }
 
@@ -52,7 +60,8 @@ const styles = StyleSheet.create({
     borderColor:'black',
     borderBottomWidth:2,
     width: '60%',
-    backgroundColor:"#EEE"
+    backgroundColor:"#EEE",
+    padding:10
   },
   Image:{
     height: 200,

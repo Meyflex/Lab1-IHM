@@ -42,8 +42,21 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun MyApp() {
+    Scaffold(
+        topBar = {
+            SmallTopAppBar(
+                title = {
+                    Text(text = "Example 1")
+                },
+                colors = TopAppBarDefaults.smallTopAppBarColors(
+                    containerColor = MaterialTheme.colorScheme.primaryContainer
+                )
+            )
+        },
+        content = { innerPadding ->
     Surface(
         modifier = Modifier
             .fillMaxSize()
@@ -98,5 +111,5 @@ fun MyApp() {
                 )
             }
         }
-    }
+    }})
 }
